@@ -1,15 +1,34 @@
-export function randomSelection() {
-    return Math.floor(Math.random() * 25);
+function randomId(productArray) {
+    const index = Math.floor(Math.random() * 20);
+
+    const product = productArray[index];
+    const productId = product.id;
+
+    return productId;
 }
 
+export function randomizeDisplay(productArray) {
+    const anyId = [];
 
-export function findById(id, array) {
-    let result = null;
+    while (anyId.length < 3) {
+        const randomProduct = randomId(productArray);
 
-    array.forEach(arrayItem => {
-        if (id === arrayItem.id) {
-            result = arrayItem;}
+        if (!(anyId.includes(randomProduct))) {
+            anyId.push(randomProduct); 
+        }
+    }
+
+    return anyId;
+}
+
+export function findById(array, productId) {
+    let productSelected = null;
+
+    array.forEach(product => {
+        if (product.id === productId) {
+            productSelected = product;
+        }
     });
-    return result;
-}
 
+    return productSelected;
+}

@@ -21,9 +21,9 @@ export const chooseProduct = (array) => {
 
     let stringSelections = localStorage.getItem('ANY-DUPLICATE');
     let parsedSelections = JSON.parse(stringSelections);
-    
+
     for (let i = 0; i < 3; i++) {
-        let number = randomSelection ();
+        let number = randomSelection();
 
     }
 }
