@@ -1,4 +1,9 @@
-export default function findById(id, array) {
+export function randomSelection() {
+    return Math.floor(Math.random() * 25);
+}
+
+
+export function findById(id, array) {
     let result = null;
 
     array.forEach(arrayItem => {
