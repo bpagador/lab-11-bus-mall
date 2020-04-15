@@ -9,7 +9,7 @@
 
 
 // chooseProduct(surveyProducts);
-// nextButton.addEventListener('click', () =>{
+// submitButton.addEventListener('click', () =>{
 //     const userSelection = document.querySelector('input:checked');
 //     incrementSelection(userSelection.value);
 //     chooseProduct(surveyProducts);
