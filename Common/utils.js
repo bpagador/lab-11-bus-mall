@@ -1,3 +1,5 @@
+
+
 function randomId(productArray) {
     const index = Math.floor(Math.random() * 20);
 
